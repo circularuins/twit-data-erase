@@ -23,7 +23,7 @@
 (def custom-formatter (f/formatter "yyyy/MM/dd HH:mm:ss"))
 
 (defn ten-days-ago-from-now []
-  (t/minus (tl/local-now) (t/days 15)))
+  (t/minus (tl/local-now) (t/days 10)))
 
 (def db (mg/get-db (mg/connect) "matching-db"))
 
